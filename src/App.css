@@ -36,3 +36,16 @@
     transform: rotate(360deg);
   }
 }
+.ShowCountries {
+  list-style: none;
+}
+.App nav ul {
+  font-size: 30px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  text-decoration: none;
+}
+.App ul {
+  text-align: left;
+}

@@ -4,11 +4,11 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 
 function CountryDetails(props) {
-  const [CountryDetails, setCountryDetails] = useState({});
+  const [air, setAir] = useState({});
 
-  let [city, setCity] = useState();
-  let [state, setState] = useState();
-  let [country, setCountry] = useState();
+  let [city, setCity] = useState("Miami");
+  let [state, setState] = useState("Florida");
+  let [country, setCountry] = useState("USA");
 
   useEffect(() => {
     axios
