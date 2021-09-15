@@ -17,21 +17,20 @@ function CountryDetails(props) {
       )
       .then((resApi) => {
         console.log(resApi);
-        setCountryDetails(resApi.data.data);
+        setAir(resApi.data.data);
       });
+
+    axios.get(
+      "http://api.airvisual.com/v2/cities?state=${state}&country=${country}&key=6f4c381f-9e57-4316-82df-7d1c53d6b9a2",
+      {
+        headers: {
+          api_key: "6f4c381f-9e57-4316-82df-7d1c53d6b9a2",
+        },
+      }
+    );
   }, []);
 
-  const ShowCountryDetails = () => {
-    return (
-      <div className="CountryDetails">
-        <div>
-          <h2>{}</h2>
-
-          <h2>hello</h2>
-          <h2>hello</h2>
-        </div>
-      </div>
-    );
-  };
+  return <div>CountryDetails</div>;
 }
+
 export default CountryDetails;
