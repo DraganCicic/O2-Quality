@@ -3,7 +3,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import { BrowserRouter, Link, Switch, Route } from "react-router-dom";
 import Home from "./components/Home.js";
-import CityDetails from "./components/CityDetails.js";
+import CountryDetails from "./components/CountryDetails.js";
 import AllCountries from "./components/AllCountries";
 import AllStates from "./components/AllStates";
 import AllCities from "./components/AllCities";
@@ -27,7 +27,7 @@ function App() {
       </nav>
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route exact path="/CityDetails" component={CityDetails} />
+        <Route exact path="/CountryDetails" component={CountryDetails} />
         <Route exact path="/AllCountries" component={AllCountries} />
         <Route exact path="/country/:countryName" component={AllStates} />
         <Route exact path="/AllCities" component={AllCities} />
