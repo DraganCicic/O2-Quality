@@ -48,4 +48,34 @@
 }
 .App ul {
   text-align: left;
+  list-style: none;
+}
+.App ul li {
+  width: 200px;
+  margin: 5px;
+  font: 200 20px/1.5 Helvetica, Verdana, sans-serif;
+  border-bottom: 1px solid #ccc;
+}
+.App li {
+  font: 200 20px/1.5 Helvetica, Verdana, sans-serif;
+  border-bottom: 1px solid #ccc;
+}
+.App li:last-child {
+  border: none;
+}
+
+.App li a {
+  text-decoration: none;
+  color: #000;
+  -webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -moz-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -o-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -ms-transition: font-size 0.3s ease, background-color 0.3s ease;
+  transition: font-size 0.3s ease, background-color 0.3s ease;
+  display: block;
+  width: 200px;
+}
+.App li a:hover {
+  font-size: 30px;
+  background: #f6f6f6;
 }

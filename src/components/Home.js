@@ -23,6 +23,7 @@ function Home() {
   return (
     <div className="App">
       <h2> Home {air?.current?.pollution?.aqius}</h2>
+      <img src="/src/images/list.png" alt="list-of-countries"></img>
     </div>
   );
 }
