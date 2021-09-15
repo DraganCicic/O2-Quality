@@ -15,14 +15,12 @@ function App() {
       className="App"
       style={{ backgroundImage: "url(./images/8450_2.webp)" }}
     >
-      sdfdsf
       <nav>
         <ul>
           <Link to="/">Home</Link>
           <Link to="/AllCountries">All Countries</Link>
           <Link to="/AllStates">All States</Link>
           <Link to="/CountryDetails">City Details</Link>
-          
         </ul>
       </nav>
       <Switch>
