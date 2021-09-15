@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 function AllStates(props) {
   console.log(props);
 
-  //     let [ states, setStates ] = useState([]);
+  let [states, setStates] = useState([]);
 
   useEffect(() => {
     axios

@@ -6,6 +6,7 @@ import Home from "./components/Home.js";
 import CountryDetails from "./components/CountryDetails.js";
 import AllCountries from "./components/AllCountries";
 import AllStates from "./components/AllStates";
+import AllCities from "./components/AllCities";
 
 // https://api.airvisual.com/v2/countries?key=a2f977a0-7c21-4fe1-a175-7de9665ee4b9
 
@@ -31,6 +32,7 @@ function App() {
         <Route exact path="/CountryDetails" component={CountryDetails} />
         <Route exact path="/AllCountries" component={AllCountries} />
         <Route exact path="/country/:countryName" component={AllStates} />
+        <Route exact path="/AllCities" component={AllCities} />
       </Switch>
     </div>
   );
