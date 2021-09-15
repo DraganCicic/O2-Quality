@@ -21,6 +21,7 @@ function App() {
           <Link to="/">Home</Link>
           <Link to="/AllCountries">All Countries</Link>
           <Link to="/AllStates">All States</Link>
+          <Link to="/AllCities">All Cities</Link>
           <Link to="/CountryDetails">City Details</Link>
           
         </ul>
