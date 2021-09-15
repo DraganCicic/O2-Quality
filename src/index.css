@@ -5,12 +5,15 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url(./images/8450_2.webp);
-  background-repeat: no-repeat;
-  background-size: cover;
+  /* background-image: url(./images/8450_2.webp); */
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.App {
+  background-repeat: no-repeat;
+  background-size: cover;
 }

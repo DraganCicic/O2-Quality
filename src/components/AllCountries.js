@@ -8,7 +8,7 @@ function AllCountries(props) {
   useEffect(() => {
     axios
       .get(
-        `http://api.airvisual.com/v2/countries?key=6f4c381f-9e57-4316-82df-7d1c53d6b9a2`
+        `https://api.airvisual.com/v2/countries?key=6f4c381f-9e57-4316-82df-7d1c53d6b9a2`
       )
       .then((resApi) => {
         console.log(resApi);
@@ -21,9 +21,11 @@ function AllCountries(props) {
       <ul>
         {countries.map(({ country }) => {
           return (
-            <Link key={country} to={`/country/${country}`}>
-              <li>{country}</li>
-            </Link>
+            <li>
+              <Link key={country} to={`/country/${country}`}>
+                {country}
+              </Link>
+            </li>
           );
         })}
       </ul>

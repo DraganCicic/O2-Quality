@@ -11,7 +11,11 @@ import AllStates from "./components/AllStates";
 
 function App() {
   return (
-    <div className="App">
+    <div
+      className="App"
+      style={{ backgroundImage: "url(./images/8450_2.webp)" }}
+    >
+      sdfdsf
       <nav>
         <ul>
           <Link to="/">Home</Link>

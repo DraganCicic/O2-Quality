@@ -13,24 +13,35 @@ function CountryDetails(props) {
   useEffect(() => {
     axios
       .get(
-        `http://api.airvisual.com/v2/city?city=${city}&state=${state}&country=${country}&key=6f4c381f-9e57-4316-82df-7d1c53d6b9a2`
+        `https://api.airvisual.com/v2/city?city=${city}&state=${state}&country=${country}&key=6f4c381f-9e57-4316-82df-7d1c53d6b9a2`
       )
       .then((resApi) => {
-        console.log(resApi);
+        // console.log(resApi);
         setAir(resApi.data.data);
       });
 
-    axios.get(
-      "http://api.airvisual.com/v2/cities?state=${state}&country=${country}&key=6f4c381f-9e57-4316-82df-7d1c53d6b9a2",
-      {
-        headers: {
-          api_key: "6f4c381f-9e57-4316-82df-7d1c53d6b9a2",
-        },
-      }
-    );
+    axios
+      .get(
+        `https://api.airvisual.com/v2/cities?state=${state}&country=${country}&key=6f4c381f-9e57-4316-82df-7d1c53d6b9a2`
+        //   {
+        //     headers: {
+        //       api_key: "6f4c381f-9e57-4316-82df-7d1c53d6b9a2",
+        //     },
+        //   }
+      )
+      .then((res) => {
+        console.log(res);
+      });
   }, []);
 
-  return <div>CountryDetails</div>;
+  return (
+    <div className="details">
+      <div>
+        <h2> {}</h2>
+      </div>
+      CountryDetails
+    </div>
+  );
 }
 
 export default CountryDetails;
