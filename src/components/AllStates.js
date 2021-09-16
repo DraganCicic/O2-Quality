@@ -13,7 +13,7 @@ function AllStates(props) {
 			axios
 				.get(
 					`http://api.airvisual.com/v2/states?country=${props.match.params
-						.countryName}&key=6f4c381f-9e57-4316-82df-7d1c53d6b9a2`
+						.countryName}&key=e5d2e6c7-288c-4da1-9c90-afaafa4f693b`
 				)
 				.then((resApi) => {
 					console.log(resApi, '?!?!?');

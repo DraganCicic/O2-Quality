@@ -6,35 +6,38 @@ import Home from './Home';
 function AllCountries(props) {
 	let [ countries, setCountries ] = useState([]);
 
-	useEffect(() => {
-		axios.get(`https://api.airvisual.com/v2/countries?key=6f4c381f-9e57-4316-82df-7d1c53d6b9a2`).then((resApi) => {
-			console.log(resApi, ' alll');
-			setCountries(resApi.data.data);
-		});
-	}, []);
+	// useEffect(() => {
+	// 	axios.get(`https://api.airvisual.com/v2/countries?key=e5d2e6c7-288c-4da1-9c90-afaafa4f693b`).then((resApi) => {
+	// 		console.log(resApi, ' alll');
+	// 		setCountries(resApi.data.data);
+	// 	});
+	// }, []);
 
-	const ShowCountries = () => {
-		return (
-			<ul>
-				{countries.map(({ country }) => {
-					return (
-						<li>
-							<Link key={country} to={`/country/${country}`}>
-								{country}
-							</Link>
-						</li>
-					);
-				})}
-			</ul>
-		);
-	};
+
+	// const ShowCountries = () => {
+	// 	return (
+	// 		<ul>
+	// 			{countries.map(({ country }) => {
+	// 				return (
+	// 					<li>
+	// 						<Link key={country} to={`/country/${country}`}>
+	// 							{country}
+	// 						</Link>
+	// 					</li>
+	// 				);
+	// 			})}
+	// 		</ul>
+	// 	);
+	// };
 
 	return (
-		<div>
-			<div className="places">
+		<div className="container">
+            <div className="inner-container">
+			{/* <div className="places">
 				<ShowCountries />
-			</div>
+			</div> */}
 			<Home />
+            </div>
 		</div>
 	);
 }
