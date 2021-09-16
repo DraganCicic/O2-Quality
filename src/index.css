@@ -2,7 +2,7 @@
 
 @media screen and (min-width: 1300px) {
   .hello {
-    width: 70vw; 
+    width: 70vw;
   }
   body {
   }
@@ -52,9 +52,9 @@ code {
 .inner-container {
   text-align: center;
   background-color: rgba(0, 121, 158, 0.644);
-  min-width: 1500px;
+  min-width: 1000px;
   height: 80%;
-  margin-top: 10%;
+  /* margin-top: 5%; */
   padding: 2rem;
 }
 
@@ -97,4 +97,7 @@ code {
 
 .displayimg {
   margin-top: 1.5vh;
+}
+img {
+  width: 50%;
 }

@@ -83,9 +83,7 @@ const SearchBar = () => {
         </label>
       </div>
       <div className="displayimg">
-        <div>
-          <img src={img} />
-        </div>
+        <img src={img} />
       </div>
     </div>
   );
