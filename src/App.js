@@ -12,16 +12,16 @@ import AllCities from './components/AllCities';
 
 function App() {
 	return (
-		<div className="App" style={{ backgroundImage: 'url(./images/8450_2.webp)' }}>
-			<nav>
+		<div className="App" >
+			{/* <nav>
 				<ul>
 					<Link to="/">Home</Link>
 					<Link to="/AllCountries">Best and Worst</Link>
-					{/* <Link to="/AllStates">All States</Link>
+					<Link to="/AllStates">All States</Link>
 					<Link to="/AllCities">All Cities</Link>
-					<Link to="/CityDetails">City Details</Link> */}
+					<Link to="/CityDetails">City Details</Link>
 				</ul>
-			</nav>
+			</nav> */}
 			<Switch>
 				<Route exact path="/" component={AllCountries} />
 				{/* <Route exact path="/CityDetails" component={CityDetails} /> */}

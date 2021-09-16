@@ -1,11 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
+
 body {
+  font-family: 'Poppins', sans-serif;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* background-image: url(./images/8450_2.webp); */
+  overflow-y: hidden;
 }
 
 code {
@@ -16,4 +17,78 @@ code {
 .App {
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.App {
+  background-image: url("http://localhost:3000/images/background.png");
+  height: 100vh;
+}
+
+.header {
+margin-top: 8vh;
+}
+
+.upper-bar {
+  margin-top: 10vh;
+}
+
+.container {
+  max-width: 1400px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.inner-container {
+  text-align: center;
+  background-color: rgba(0, 121, 158, 0.644) ;
+  min-width: 1500px;
+  height: 80%;
+  margin-top: 10%;
+  padding: 2rem;
+  
+}
+
+.search-bar {
+  text-align: center;
+
+}
+
+.intro-text {
+  font-size: 2rem;
+}
+
+.air-quality {
+  font-size: 2.5rem;
+}
+
+.search-box {
+  font-size: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.button {
+  font-size: 2rem;
+  margin-left: 10px;
+  background-color: aqua;
+  color: grey;
+  border-radius: 3px;
+  border: 1px solid grey;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.airtext {
+  margin-top: 3vh;
+}
+
+.displayimg {
+  margin-top: 1.5vh;
 }
