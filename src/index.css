@@ -1,6 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap");
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1300px) {
+  .hello {
+    width: 70vw; 
+  }
+  body {
+  }
 }
 
 body {
