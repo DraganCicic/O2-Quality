@@ -6,7 +6,8 @@ const SearchBar = () => {
 	//set 2 variables to empty string so they automatically reload
 	const [ city, setCity ] = useState('');
 	const [ aqi, setAqi ] = useState('');
-	const [ img, setImg ] = useState('./images/aqi.gif');
+	const [ img, setImg ] = useState('');
+	const [ homeGif, setHomeGif ] = useState('../images/aqi.gif');
 
 	//created SearchAirFunction (gets data from API, and updates air quality index)
 	const searchAir = () => {
@@ -84,6 +85,11 @@ const SearchBar = () => {
 			<div className="displayimg">
 				<div>
 					<img src={img} />
+				</div>
+			</div>
+			<div className="homegif">
+				<div>
+					<img src={homeGif} />
 				</div>
 			</div>
 		</div>

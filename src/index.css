@@ -96,10 +96,24 @@ code {
 }
 
 .displayimg {
-	margin-top: -6vh;
+	padding: 0;
+	margin-top: 5vh;
 	pointer-events: none;
+	/* width: 25%;
+	height: auto; */
 }
 
-img {
+/* img {
 	width: 55%;
+} */
+
+/* homeGif {
+	width: ;
+} */
+
+.homegif {
+	height: 50px;
+	width: auto;
+
+	pointer-events: none;
 }
