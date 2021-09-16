@@ -1,106 +1,105 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
 
 @media screen and (min-width: 1300px) {
-  .hello {
-  }
-  body {
-  }
+	.hello {
+	}
+	body {
+	}
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
-  margin: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  /* background-image: url(./images/8450_2.webp); */
-  overflow-y: hidden;
+	font-family: 'Poppins', sans-serif;
+	margin: 0;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	/* background-image: url(./images/8450_2.webp); */
+	overflow-y: hidden;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
 .App {
-  background-repeat: no-repeat;
-  background-size: cover;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .App {
-  background-image: url("http://localhost:3000/images/background.png");
-  height: 100vh;
+	background-image: url("http://localhost:3000/images/background.png");
+	height: 100vh;
 }
 
 .header {
-margin-top: 8vh;
+	margin-top: 8vh;
 }
 
 .upper-bar {
-  margin-top: 10vh;
+	margin-top: 10vh;
 }
 
 .container {
-  max-width: 1400px;
-  height: 100%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  /* align-items: center; */
+	max-width: 1400px;
+	height: 100%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	/* align-items: center; */
 }
 
 .inner-container {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  background-color: rgba(0, 121, 158, 0.644) ;
-  min-width: 1500px;
-  height: 80%;
-  margin-top: 10%;
-  padding: 2rem;
-  
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	background-color: rgba(0, 121, 158, 0.644);
+	min-width: 1500px;
+	height: 80%;
+	margin-top: 10%;
+	padding: 2rem;
 }
 
 .search-bar {
-  text-align: center;
-
+	text-align: center;
 }
 
 .intro-text {
-  font-size: 2rem;
+	font-size: 2rem;
 }
 
 .air-quality {
-  font-size: 2.5rem;
+	font-size: 2.5rem;
 }
 
 .search-box {
-  font-size: 2rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
+	font-size: 2rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	padding-top: 0.25rem;
+	padding-bottom: 0.25rem;
 }
 
 .button {
-  font-size: 2rem;
-  margin-left: 10px;
-  background-color: aqua;
-  color: grey;
-  border-radius: 3px;
-  border: 1px solid grey;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
+	font-size: 2rem;
+	margin-left: 10px;
+	background-color: aqua;
+	color: grey;
+	border-radius: 3px;
+	border: 1px solid grey;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	padding-top: 0.25rem;
+	padding-bottom: 0.25rem;
 }
 
 .airtext {
-  margin-top: 3vh;
+	margin-top: 3vh;
 }
 
 .displayimg {
-  margin-top: -6vh;
-  pointer-events: none;
+	margin-top: -6vh;
+	pointer-events: none;
 }
 
-img{width: 55%;}
+img {
+	width: 55%;
+}
