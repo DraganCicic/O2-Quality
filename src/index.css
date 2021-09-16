@@ -49,6 +49,8 @@ margin-top: 8vh;
 }
 
 .inner-container {
+  display: flex;
+  justify-content: center;
   text-align: center;
   background-color: rgba(0, 121, 158, 0.644) ;
   min-width: 1500px;
@@ -101,4 +103,4 @@ margin-top: 8vh;
   pointer-events: none;
 }
 
-img{width: 40%;}
+img{width: 55%;}
