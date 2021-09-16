@@ -2,7 +2,6 @@
 
 @media screen and (min-width: 1300px) {
   .hello {
-    width: 70vw; 
   }
   body {
   }
@@ -98,5 +97,8 @@ margin-top: 8vh;
 }
 
 .displayimg {
-  margin-top: 1.5vh;
+  margin-top: -6vh;
+  pointer-events: none;
 }
+
+img{width: 40%;}
