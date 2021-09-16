@@ -31,6 +31,9 @@ code {
 }
 
 .header {
+  color:  orange;
+  border: 1px solid white;
+  margin-top: 8vh;
 	margin-top: 8vh;
 }
 
@@ -63,6 +66,8 @@ code {
 }
 
 .intro-text {
+  color: white;
+  font-size: 2rem;
 	font-size: 2rem;
 }
 
@@ -79,6 +84,21 @@ code {
 }
 
 .button {
+  font-size: 2rem;
+  margin-left: 10px;
+  background-color: orange;
+  color: white;
+  border-radius: 3px;
+  border: 1px solid white;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.airtext {
+  color: white;
+  margin-top: 3vh;
 	font-size: 2rem;
 	margin-left: 10px;
 	background-color: aqua;
