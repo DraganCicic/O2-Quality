@@ -1,84 +1,89 @@
 .App {
-  text-align: center;
+	text-align: center;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+	height: 40vmin;
+	pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+	.App-logo {
+		animation: App-logo-spin infinite 20s linear;
+	}
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+	background-color: #282c34;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: calc(10px + 2vmin);
+	color: white;
 }
 
 .App-link {
-  color: #61dafb;
+	color: #61dafb;
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
 }
 .ShowCountries {
-  list-style: none;
+	list-style: none;
 }
 .App nav ul {
-  font-size: 30px;
-  padding: 10px;
-  display: flex;
-  justify-content: space-around;
-  text-decoration: none;
+	font-size: 30px;
+	padding: 10px;
+	display: flex;
+	justify-content: space-around;
+	text-decoration: none;
 }
 .App ul {
-  text-align: left;
-  list-style: none;
+	text-align: left;
+	list-style: none;
 }
 .App ul li {
-  width: 200px;
-  margin: 5px;
-  font: 200 20px/1.5 Helvetica, Verdana, sans-serif;
-  border-bottom: 1px solid #ccc;
+	width: 200px;
+	margin: 5px;
+	font: 200 20px/1.5 Helvetica, Verdana, sans-serif;
+	border-bottom: 1px solid #ccc;
 }
 .App li {
-  font: 200 20px/1.5 Helvetica, Verdana, sans-serif;
-  border-bottom: 1px solid #ccc;
+	font: 200 20px/1.5 Helvetica, Verdana, sans-serif;
+	border-bottom: 1px solid #ccc;
 }
 .App li:last-child {
-  border: none;
+	border: none;
 }
 
 .App li a {
-  text-decoration: none;
-  color: #000;
-  -webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
-  -moz-transition: font-size 0.3s ease, background-color 0.3s ease;
-  -o-transition: font-size 0.3s ease, background-color 0.3s ease;
-  -ms-transition: font-size 0.3s ease, background-color 0.3s ease;
-  transition: font-size 0.3s ease, background-color 0.3s ease;
-  display: block;
-  width: 200px;
+	text-decoration: none;
+	color: #000;
+	-webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
+	-moz-transition: font-size 0.3s ease, background-color 0.3s ease;
+	-o-transition: font-size 0.3s ease, background-color 0.3s ease;
+	-ms-transition: font-size 0.3s ease, background-color 0.3s ease;
+	transition: font-size 0.3s ease, background-color 0.3s ease;
+	display: block;
+	width: 200px;
 }
 .App li a:hover {
-  font-size: 30px;
-  background: #f6f6f6;
+	font-size: 30px;
+	background: #f6f6f6;
 }
 .best {
-  opacity: 0.6;
+	opacity: 0.6;
+}
+
+.places {
+	position: fixed;
+	z-index: 10;
 }

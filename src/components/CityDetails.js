@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 
-function CountryDetails(props) {
+function CityDetails(props) {
   const [air, setAir] = useState({});
 
   let [city, setCity] = useState("Miami");
@@ -39,9 +39,9 @@ function CountryDetails(props) {
       <div>
         <h2> {}</h2>
       </div>
-      CountryDetails
+      City Details
     </div>
   );
 }
 
-export default CountryDetails;
+export default CityDetails;

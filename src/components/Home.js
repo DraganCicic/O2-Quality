@@ -1,6 +1,7 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import AllCountries from "./AllCountries";
 // import best from "../images/best.png";
 // import worst from "../images/worst.png";
 
@@ -10,8 +11,9 @@ function Home() {
   let [city, setCity] = useState("Miami");
   let [state, setState] = useState("Florida");
   let [country, setCountry] = useState("USA");
-
+ 
   useEffect(() => {
+    console.log('home')
     axios
       .get(
         `https://api.airvisual.com/v2/city?city=${city}&state=${state}&country=${country}&key=6f4c381f-9e57-4316-82df-7d1c53d6b9a2`
@@ -23,9 +25,9 @@ function Home() {
   }, []);
 
   return (
-    <div className="App">
+    <div className="">
       <h2> Home {air?.current?.pollution?.aqius}</h2>
-
+      
       <div className="best">
         <h1> Top 5 Best cities</h1>
         <img src="./images/best.png" />
