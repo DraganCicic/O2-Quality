@@ -7,6 +7,8 @@ import CityDetails from "./components/CityDetails.js";
 import AllCountries from "./components/AllCountries";
 import AllStates from "./components/AllStates";
 import AllCities from "./components/AllCities";
+import SearchBar from "./components/SearchBar";
+import WeatherChannel from "./components/WeatherChannel";
 
 // https://api.airvisual.com/v2/countries?key=a2f977a0-7c21-4fe1-a175-7de9665ee4b9
 
@@ -38,6 +40,7 @@ function App() {
           component={CityDetails}
         />
         {/* <Route exact path="/AllCities" component={AllCities} /> */}
+        <Route exact path="/WeatherChanel" component={WeatherChanel} />
       </Switch>
     </div>
   );

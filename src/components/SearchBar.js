@@ -7,6 +7,8 @@ const SearchBar = () => {
   const [city, setCity] = useState("");
   const [aqi, setAqi] = useState("");
   const [img, setImg] = useState("./images/aqi.gif");
+  const [best, setBest] = useState("./images/best.png");
+  const [worst, setWorst] = useState("./images/worst.png");
 
   //created SearchAirFunction (gets data from API, and updates air quality index)
   const searchAir = () => {
@@ -16,7 +18,7 @@ const SearchBar = () => {
     setAqi("");
     axios
       .get(
-        `http://api.waqi.info/feed/${city}/?token=7bbad505bdf328ef7a5949e2d4876f994f4fb81f`
+        `https://api.waqi.info/feed/${city}/?token=7bbad505bdf328ef7a5949e2d4876f994f4fb81f`
       )
       .then((resApi) => {
         console.log(resApi.data.data.aqi);
@@ -53,38 +55,46 @@ const SearchBar = () => {
   };
 
   return (
-    <div className="upper-bar">
-      <div className="search-bar">
-        <div>
-          <label className="intro-text">Check your local Air Quality</label>
-        </div>
-        {
-          //when you type in search bar, runs the updateCityText function
-        }
-        <div>
-          <input
-            onChange={updateCityText}
-            onKeyUp={enter}
-            type="text"
-            className="search-box"
-            placeholder="Type City Name"
-          />
+    <div>
+      <div className="upper-bar">
+        <div className="search-bar">
+          <div>
+            <label className="intro-text">Check your local Air Quality</label>
+          </div>
           {
-            //run searchAir function on click
+            //when you type in search bar, runs the updateCityText function
           }
-          <button onClick={searchAir} className="button">
-            Search
-          </button>
+          <div>
+            <input
+              onChange={updateCityText}
+              onKeyUp={enter}
+              type="text"
+              className="search-box"
+              placeholder="Type City Name"
+            />
+            {
+              //run searchAir function on click
+            }
+            <button onClick={searchAir} className="button">
+              Search
+            </button>
+          </div>
+        </div>
+        <div className="airtext">
+          <label className="air-quality">
+            Air Quality ({city}): <span>{aqi}</span>
+          </label>
+        </div>
+        <div className="displayimg">
+          <img src={img} />
         </div>
       </div>
-      <div className="airtext">
-        <label className="air-quality">
-          Air Quality ({city}): <span>{aqi}</span>
-        </label>
-      </div>
-      <div className="displayimg">
-        <img src={img} />
-      </div>
+
+      <section className="specs">
+        <img src={best} />
+
+        <img src={worst} />
+      </section>
     </div>
   );
 };
