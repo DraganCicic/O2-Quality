@@ -9,12 +9,28 @@ import AllStates from "./components/AllStates";
 import AllCities from "./components/AllCities";
 import SearchBar from "./components/SearchBar";
 import WeatherChannel from "./components/WeatherChannel";
+import { useEffect } from "react";
+import axios from "axios";
 
 // https://api.airvisual.com/v2/countries?key=a2f977a0-7c21-4fe1-a175-7de9665ee4b9
 
 function App() {
+
+
+  useEffect(() => {
+    axios.get('https://ironrest.herokuapp.com/o2Air')
+      .then(res => console.log(res.data))
+  }, [])
+
+  const saveData = () => {
+    axios.post('https://ironrest.herokuapp.com/o2Air', {hello: 'world'})
+      .then(res => console.log(res.data))
+  }
+
+
   return (
     <div className="App">
+    <button onClick={saveData}> Hello World </button>
       {/* <nav>
 				<ul>
 					<Link to="/">Home</Link>
