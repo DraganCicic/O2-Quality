@@ -16,21 +16,8 @@ import axios from "axios";
 
 function App() {
 
-
-  useEffect(() => {
-    axios.get('https://ironrest.herokuapp.com/o2Air')
-      .then(res => console.log(res.data))
-  }, [])
-
-  const saveData = () => {
-    axios.post('https://ironrest.herokuapp.com/o2Air', {hello: 'world'})
-      .then(res => console.log(res.data))
-  }
-
-
   return (
     <div className="App">
-    <button onClick={saveData}> <h1 className="btn-grad">Hello World</h1> </button>
       {/* <nav>
 				<ul>
 					<Link to="/">Home</Link>

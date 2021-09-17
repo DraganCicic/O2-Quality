@@ -1,10 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap");
 
 @media screen and (min-width: 1300px) {
-	.hello {
-	}
-	body {
-	}
 }
 
 body {
@@ -153,6 +149,11 @@ code {
 	   border-radius: 10px;
 	   display: block;
 	 }
+
+.hello-button {
+  display: flex;
+  justify-content: center;
+}
 
 .btn-grad:hover {
 	   background-position: right center; /* change the direction of the change here */
