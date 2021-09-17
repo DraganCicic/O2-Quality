@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap");
 
 @media screen and (min-width: 1300px) {
-  .hello {
-  }
-  body {
-  }
+	.hello {
+	}
+	body {
+	}
 }
 
 body {
@@ -17,35 +17,37 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
 .App {
-  background-repeat: no-repeat;
-  background-size: cover;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .App {
-  background-image: url("http://localhost:3000/images/background.png");
-  height: 100vh;
+	background-image: url("http://localhost:3000/images/background.png");
+	height: 100vh;
 }
 
 .header {
+  color:  orange;
+  /* border: 1px solid white; */
   margin-top: 8vh;
+	margin-top: 8vh;
 }
 
 .upper-bar {
-  margin-top: 10vh;
+	margin-top: 10vh;
 }
 
 .container {
-  max-width: 1400px;
-  height: 100%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  /* align-items: center; */
+	max-width: 1400px;
+	height: 100%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	/* align-items: center; */
 }
 
 .inner-container {
@@ -64,28 +66,30 @@ code {
 }
 
 .intro-text {
+  color: white;
   font-size: 2rem;
+	font-size: 2rem;
 }
 
 .air-quality {
-  font-size: 2.5rem;
+	font-size: 2.5rem;
 }
 
 .search-box {
-  font-size: 2rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
+	font-size: 2rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	padding-top: 0.25rem;
+	padding-bottom: 0.25rem;
 }
 
 .button {
   font-size: 2rem;
   margin-left: 10px;
-  background-color: aqua;
-  color: grey;
+  background-color: orange;
+  color: white;
   border-radius: 3px;
-  border: 1px solid grey;
+  border: 1px solid white;
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top: 0.25rem;
@@ -93,19 +97,43 @@ code {
 }
 
 .airtext {
+  color: white;
   margin-top: 3vh;
+	font-size: 2rem;
+	margin-left: 10px;
+	background-color: aqua;
+	color: grey;
+	border-radius: 3px;
+	border: 1px solid grey;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	padding-top: 0.25rem;
+	padding-bottom: 0.25rem;
+}
+
+.airtext {
+	margin-top: 3vh;
 }
 
 .displayimg {
-  margin-top: -6vh;
-  pointer-events: none;
+	padding: 0;
+	margin-top: 5vh;
+	pointer-events: none;
+	/* width: 25%;
+	height: auto; */
 }
 
-img {
-  width: 40%;
-}
+/* img {
+	width: 55%;
+} */
 
-.specs {
-  display: flex;
-  justify-content: space-between;
+/* homeGif {
+	width: ;
+} */
+
+.homegif {
+	height: 50px;
+	width: auto;
+
+	pointer-events: none;
 }

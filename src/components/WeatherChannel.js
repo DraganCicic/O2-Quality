@@ -4,7 +4,7 @@ import axios from "axios";
 import { useState } from "react";
 import { scryRenderedComponentsWithType } from "react-dom/test-utils";
 
-const WeatherChanel = () => {
+const WeatherChannel = () => {
   const[temperature, setTemperature] = useState("")
   const[city,setCity] = useState("London")
   const[country,setCountry] = useState("UK")

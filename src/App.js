@@ -40,7 +40,7 @@ function App() {
           component={CityDetails}
         />
         {/* <Route exact path="/AllCities" component={AllCities} /> */}
-        <Route exact path="/WeatherChanel" component={WeatherChanel} />
+        <Route exact path="/WeatherChannel" component={WeatherChannel} />
       </Switch>
     </div>
   );
