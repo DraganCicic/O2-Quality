@@ -159,4 +159,7 @@ code {
 	   color: #fff;
 	   text-decoration: none;
 	 }
-	
+.input-btn{
+	width: 100px;
+	height: 160px;
+}

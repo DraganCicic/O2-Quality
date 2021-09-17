@@ -62,8 +62,8 @@ const WeatherChannel = () => {
               {Math.round(temperature * 100) / 100} ℉ - {desc}
             </div>
               <br/>
-
-              <input
+            
+              <input 
                 text= "text"
                 value={city}
                 onChange={(e) => setCity(e.target.value)}
