@@ -41,32 +41,17 @@ const SearchBar = () => {
       });
   };
 
-		axios
-			.get(`http://api.waqi.info/feed/${city}/?token=7bbad505bdf328ef7a5949e2d4876f994f4fb81f`)
-			.then((resApi) => {
-				console.log(resApi.data.data.aqi);
-				setAqi(resApi.data.data.aqi);
-				if (resApi.data.data.aqi >= 300) {
-					setImg('./images/aqi6.png');
-				} else if (resApi.data.data.aqi >= 200) {
-					setImg('./images/aqi5.png');
-				} else if (resApi.data.data.aqi >= 150) {
-					setImg('./images/aqi4.png');
-				} else if (resApi.data.data.aqi >= 100) {
-					setImg('./images/aqi3.png');
-				} else if (resApi.data.data.aqi >= 50) {
-					setImg('./images/aqi2.png');
-				} else if (resApi.data.data.aqi >= 0) {
-					setImg('./images/aqi1.png');
-				} else {
-					setImg('./images/aqi0.png');
-				}
-			});
-	
-
 	//update value of variable city when we start typing in search bar. e short for event, but can be any variable.
 	const updateCityText = (e) => {
 		setCity(e.target.value);
+	};
+
+	//allows for enter key to also be used
+	const enter = (e) => {
+		console.log(e);
+		if (e.key === 'Enter') {
+			searchAir();
+		}
 	};
 
   return (
@@ -82,7 +67,7 @@ const SearchBar = () => {
           <div>
             <input
               onChange={updateCityText}
-             
+              onKeyUp={enter}
               type="text"
               className="search-box"
               placeholder="Type City Name"
