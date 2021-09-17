@@ -19,6 +19,7 @@ const WeatherChannel = () => {
       console.log(res.data.main.temp);
       // Kelvin to Farenheit
       setTemperature((res.data.main.temp - 273.15) * 1.8 +32);
+      
       setDesc(res.data.weather[0].main)
     })
     .catch((error) =>{
@@ -27,17 +28,30 @@ const WeatherChannel = () => {
   };
   return(
     <>
+      <div>
+        <h1 style={{
+          display:"flex",
+          justifyContent:"center",
+          alignItems:"center",
+          height: "80px",
+          width:"100%",
+          backgroundColor:"#226ba3",
+          fontSize:"30px",
+          color: "#fff",
+        }}>Weather APP</h1>
+      </div>
       <div style={{marginLeft: "33%"}}>
           <div 
             style={{
-              height:"150px",
+              height:"250px",
               width: "450px",
               backgroundColor: "#00d4ff",
               display:"flex",
               justifyContent:"center",
               alignItems:"center",
               fontSize:"30px",
-              color: "#fff"
+              color: "#fff",
+              
             
             }}
             >
