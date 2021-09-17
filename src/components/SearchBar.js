@@ -1,8 +1,12 @@
 import axios from 'axios';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import WeatherChannel from './WeatherChannel';
+// import Home from './components/Home.js';
+import Header from './Header';
+import AllCountries from './AllCountries';
 
 //creating searchBar component(function)
-const SearchBar = () => {
+const SearchBar = (props) => {
 	//set 2 variables to empty string so they automatically reload
 	const [ city, setCity ] = useState('');
 	const [ aqi, setAqi ] = useState('');
@@ -52,6 +56,16 @@ const SearchBar = () => {
 		}
 	};
 
+	useEffect(() => {
+		axios.get('https://ironrest.herokuapp.com/o2Air').then((res) => console.log(res.data));
+	}, []);
+
+	const saveData = (city) => {
+		axios
+			.post('https://ironrest.herokuapp.com/o2Air', { Favorite: `${city}` })
+			.then((res) => console.log(res.data));
+	};
+
 	return (
 		<div>
 			<div className="upper-bar">
@@ -83,22 +97,36 @@ const SearchBar = () => {
 						Air Quality in {city}: <span>{aqi}</span>
 					</label>
 				</div>
+				<div>
+					<button onClick={saveData(city)} className="btn-grad">
+						Save Favorite City
+					</button>
+
+					<button
+						onClick={() => {
+							console.log(props);
+							props.history.push('/WeatherChannel');
+						}}
+						className="weather-btn"
+					>
+						Check City Weather
+					</button>
+				</div>
 				<div className="displayimg">
 					<img src={img} />
 				</div>
+				<div className="homegif">
+					<div>
+						<img src={homeGif} />
+					</div>
+				</div>
 			</div>
 
-			<section className="specs">
+			{/* <section className="specs">
 				<img src={best} />
 
 				<img src={worst} />
-			</section>
-
-			<div className="homegif">
-				<div>
-					<img src={homeGif} />
-				</div>
-			</div>
+			</section> */}
 		</div>
 	);
 };

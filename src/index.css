@@ -4,12 +4,12 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
-  margin: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  /* background-image: url(./images/8450_2.webp); */
-  overflow-y: hidden;
+	font-family: "Poppins", sans-serif;
+	margin: 0;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	/* background-image: url(./images/8450_2.webp); */
+	overflow-y: hidden;
 }
 
 code {
@@ -27,9 +27,9 @@ code {
 }
 
 .header {
-  color:  orange;
-  /* border: 1px solid white; */
-  margin-top: 8vh;
+	color: orange;
+	/* border: 1px solid white; */
+	margin-top: 8vh;
 	margin-top: 8vh;
 }
 
@@ -47,23 +47,23 @@ code {
 }
 
 .inner-container {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  background-color: rgba(0, 121, 158, 0.644);
-  min-width: 1000px;
-  /* height: 80%; */
-  /* margin-top: 5%; */
-  padding: 2rem;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	background-color: rgba(0, 121, 158, 0.644);
+	min-width: 1000px;
+	/* height: 80%; */
+	/* margin-top: 5%; */
+	padding: 2rem;
 }
 
 .search-bar {
-  text-align: center;
+	text-align: center;
 }
 
 .intro-text {
-  color: white;
-  font-size: 2rem;
+	color: white;
+	font-size: 2rem;
 	font-size: 2rem;
 }
 
@@ -80,21 +80,21 @@ code {
 }
 
 .button {
-  font-size: 2rem;
-  margin-left: 10px;
-  background-color: orange;
-  color: white;
-  border-radius: 3px;
-  border: 1px solid white;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
+	font-size: 2rem;
+	margin-left: 10px;
+	background-color: orange;
+	color: white;
+	border-radius: 3px;
+	border: 1px solid white;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	padding-top: 0.25rem;
+	padding-bottom: 0.25rem;
 }
 
 .airtext {
-  color: white;
-  margin-top: 3vh;
+	color: white;
+	margin-top: 3vh;
 	font-size: 2rem;
 	margin-left: 600px;
 	margin-right: 600px;
@@ -135,29 +135,44 @@ code {
 	pointer-events: none;
 }
 
-
-.btn-grad {background-image: linear-gradient(to right, #ff6e7f 0%, #bfe9ff  51%, #ff6e7f  100%)}
 .btn-grad {
-	   margin: 10px;
-	   padding: 15px 45px;
-	   text-align: center;
-	   text-transform: uppercase;
-	   transition: 0.5s;
-	   background-size: 200% auto;
-	   color: white;            
-	   box-shadow: 0 0 20px #eee;
-	   border-radius: 10px;
-	   display: block;
-	 }
+	background-image: linear-gradient(to right, #ff6e7f 0%, #bfe9ff 51%, #ff6e7f 100%);
+}
+.btn-grad {
+	margin: 10px;
+	padding: 15px 45px;
+	text-align: center;
+	text-transform: uppercase;
+	transition: 0.5s;
+	background-size: 200% auto;
+	color: white;
+	box-shadow: 0 0 20px #eee;
+	border-radius: 10px;
+}
 
 .hello-button {
-  display: flex;
-  justify-content: center;
+	display: flex;
+	justify-content: center;
 }
 
 .btn-grad:hover {
-	   background-position: right center; /* change the direction of the change here */
-	   color: #fff;
-	   text-decoration: none;
-	 }
-	
+	background-position: right center; /* change the direction of the change here */
+	color: #fff;
+	text-decoration: none;
+}
+
+.weather-btn {
+	background-image: linear-gradient(to right, #ff6e7f 0%, #bfe9ff 51%, #ff6e7f 100%);
+	background-position: right center; /*change the direction of the change here */
+	color: #fff;
+	text-decoration: none;
+	margin: 10px;
+	padding: 15px 45px;
+	text-align: center;
+	text-transform: uppercase;
+	transition: 0.5s;
+	background-size: 200% auto;
+	color: white;
+	box-shadow: 0 0 20px #eee;
+	border-radius: 10px;
+}
