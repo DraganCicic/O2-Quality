@@ -6,6 +6,7 @@ import { scryRenderedComponentsWithType } from "react-dom/test-utils";
 
 const WeatherChannel = () => {
   const[temperature, setTemperature] = useState("")
+  const[ desc, setDesc] = useState ("")
   const[city,setCity] = useState("London")
   const[country,setCountry] = useState("UK")
 
@@ -18,6 +19,7 @@ const WeatherChannel = () => {
       console.log(res.data.main.temp);
       // Kelvin to Farenheit
       setTemperature((res.data.main.temp - 273.15) * 1.8 +32);
+      setDesc(res.data.weather[0].main)
     })
     .catch((error) =>{
       console.log(error);
@@ -30,17 +32,20 @@ const WeatherChannel = () => {
             style={{
               height:"150px",
               width: "450px",
-              backgroundColor: " #94e5ff",
+              backgroundColor: "#00d4ff",
               display:"flex",
               justifyContent:"center",
               alignItems:"center",
               fontSize:"30px",
+              color: "#fff"
+            
             }}
             >
+            {new Date().toLocaleString()}
               <br/>
                 {city} Weather
               <br/>
-              {Math.round(temperature * 100) / 100} ℉
+              {Math.round(temperature * 100) / 100} ℉ - {desc}
             </div>
               <br/>
 
