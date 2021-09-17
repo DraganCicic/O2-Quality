@@ -1,7 +1,7 @@
 import React from "react";
 import { render } from "react-dom";
 import axios from "axios";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { scryRenderedComponentsWithType } from "react-dom/test-utils";
 
 const WeatherChannel = () => {
