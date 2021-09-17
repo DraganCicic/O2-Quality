@@ -30,7 +30,7 @@ function App() {
 
   return (
     <div className="App">
-    <button onClick={saveData}> Hello World </button>
+    <button onClick={saveData}> <h1 className="btn-grad">Hello World</h1> </button>
       {/* <nav>
 				<ul>
 					<Link to="/">Home</Link>
