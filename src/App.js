@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { BrowserRouter, Link, Switch, Route } from 'react-router-dom';
+import { BrowserRouter, Link, Switch, Route, useLocation } from 'react-router-dom';
 import Home from './components/Home.js';
 import CityDetails from './components/CityDetails.js';
 import AllCountries from './components/AllCountries';
@@ -15,11 +15,21 @@ import axios from 'axios';
 // https://api.airvisual.com/v2/countries?key=a2f977a0-7c21-4fe1-a175-7de9665ee4b9
 
 function App() {
+	const location = useLocation()
+	
+	const isHomePage = location.pathname === "/"
 	return (
 		<div className="App">
 			<nav>
 				<ul>
-					<Link to="/">Home</Link>
+					{
+						isHomePage ? null : <Link to="/"><img src=" https://www.pngall.com/wp-content/uploads/2016/04/Home-Download-PNG.png" alt="home" style={{
+							width: "50px"
+						}
+							
+						}/></Link>
+					}
+					
 					{/* <Link to="/WeatherChannel">Check City Weather</Link> */}
 				</ul>
 			</nav>

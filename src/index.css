@@ -13,7 +13,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* background-image: url(./images/8450_2.webp); */
-  overflow-y: hidden;
+  /* overflow-y: hidden; */
+  min-height: 100vh;
+}
+#root{
+min-height: 100vh;
 }
 
 code {
@@ -23,11 +27,15 @@ code {
 .App {
 	background-repeat: no-repeat;
 	background-size: cover;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+
 }
 
 .App {
 	background-image: url("http://localhost:3000/images/background.png");
-	height: 100vh;
+	/* height: 100vh; */
 }
 
 .header {
@@ -47,7 +55,8 @@ code {
 	margin: 0 auto;
 	display: flex;
 	justify-content: center;
-	/* align-items: center; */
+	align-items: center;
+	flex: 1 0 100%;
 }
 
 .inner-container {
@@ -55,7 +64,7 @@ code {
   justify-content: center;
   text-align: center;
   background-color: rgba(0, 121, 158, 0.644);
-  min-width: 1000px;
+  max-width: 1000px;
   /* height: 80%; */
   /* margin-top: 5%; */
   padding: 2rem;
@@ -97,11 +106,9 @@ code {
 }
 
 .airtext {
-  color: white;
-  margin-top: 3vh;
+  	color: white;
+  	margin-top: 3vh;
 	font-size: 2rem;
-	margin-left: 600px;
-	margin-right: 600px;
 	background-color: aqua;
 	color: grey;
 	border-radius: 3px;
@@ -110,27 +117,34 @@ code {
 	padding-right: 1rem;
 	padding-top: 0.25rem;
 	padding-bottom: 0.25rem;
+	margin-left: 120px;
+	margin-right: 120px;
+	
 }
 
 .airtext {
 	margin-top: 3vh;
 }
 
+img{
+	display: block;
+	max-width: 100%;
+}
 .displayimg {
 	padding: 0;
-	margin-top: 5vh;
+	margin-top: 30px;
 	pointer-events: none;
-	/* width: 25%;
-	height: auto; */
+	display: flex;
+	justify-content: center;
+	
+	
+}
+.animatedImage{
+	width: 60%;
+	
 }
 
-/* img {
-	width: 55%;
-} */
 
-/* homeGif {
-	width: ;
-} */
 
 .homegif {
 	height: 50px;
@@ -159,4 +173,47 @@ code {
 	   color: #fff;
 	   text-decoration: none;
 	 }
-	
+
+
+
+	 
+	 p{
+		 margin:0;
+		 
+		}
+	.date {
+		font-size: 24px;
+		font-weight: bold;
+		margin-top: 0;
+		margin-bottom: 15px;
+	}
+	.city{
+		font-size: 24px;
+	}
+	.temp{
+		font-size: 60px;
+		font-weight: bold;
+	}
+	.weatherStatus{
+		font-size: 30px;
+		margin-bottom: 0;	
+	}
+	.weatherData{
+		padding-left: 20px;
+	}
+	.form{
+		display: flex;
+		padding-top: 20px;
+		
+		
+	}
+	.form-input{
+		font-size: 25px;
+		margin: 0 10px;
+		padding: 5px;
+		border-radius: 5px;
+	}
+	.btn-wrapper{
+		display: flex;
+		justify-content: center;
+	}

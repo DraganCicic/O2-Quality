@@ -97,29 +97,25 @@ const SearchBar = (props) => {
 						Air Quality in {city}: <span>{aqi}</span>
 					</label>
 				</div>
-				<div>
+				<div className="btn-wrapper">
 					<button onClick={saveData(city)} className="btn-grad">
 						Save Favorite City
 					</button>
 
-					<button
+					<button 
 						onClick={() => {
 							console.log(props);
 							props.history.push('/WeatherChannel');
 						}}
-						className="weather-btn"
+						className="btn-grad"
 					>
 						Check City Weather
 					</button>
 				</div>
 				<div className="displayimg">
-					<img src={img} />
+					<img className="animatedImage" src={img} />
 				</div>
-				<div className="homegif">
-					<div>
-						<img src={homeGif} />
-					</div>
-				</div>
+				
 			</div>
 
 			{/* <section className="specs">
