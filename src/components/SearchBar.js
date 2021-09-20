@@ -4,6 +4,7 @@ import WeatherChannel from './WeatherChannel';
 // import Home from './components/Home.js';
 import Header from './Header';
 import AllCountries from './AllCountries';
+import SavedCities from './SavedCities';
 
 //creating searchBar component(function)
 const SearchBar = (props) => {
@@ -102,7 +103,17 @@ const SearchBar = (props) => {
 						Save Favorite City
 					</button>
 
-					<button 
+					<button
+						onClick={() => {
+							console.log(props);
+							props.history.push('/SavedCities');
+						}}
+						className="btn-grad"
+					>
+						View Favorite Cities
+					</button>
+
+					<button
 						onClick={() => {
 							console.log(props);
 							props.history.push('/WeatherChannel');
@@ -115,7 +126,6 @@ const SearchBar = (props) => {
 				<div className="displayimg">
 					<img className="animatedImage" src={img} />
 				</div>
-				
 			</div>
 
 			{/* <section className="specs">
