@@ -53,10 +53,10 @@ const SavedCities = () => {
 		);
 	};
 	return (
-		<div>
-			<h1 className="favorites">Favorite Cities</h1>
+		<div className="outer">
 			<div className="list-cities">
 				<div className="savedCities-container">
+                <header className="favorites">Favorite Cities</header>
 					<ShowFavoriteCities />
 				</div>
 			</div>

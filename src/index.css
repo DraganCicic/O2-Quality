@@ -64,6 +64,7 @@ code {
   justify-content: center;
   text-align: center;
   background-color: rgba(0, 121, 158, 0.644);
+  border: 1px solid orangered;
   max-width: 1000px;
   /* height: 80%; */
   /* margin-top: 5%; */
@@ -168,6 +169,7 @@ img {
   display: block;
   font-size: 1rem;
   font-weight: 700;
+  margin-top: 30px;
 }
 
 .btn-grad:hover {
@@ -217,6 +219,7 @@ p {
 .favorites {
   display: flex;
   justify-content: center;
+  align-content: space-around;
 }
 
 .list-cities {
@@ -265,4 +268,19 @@ p {
 	/* height: 80%; */
 	/* margin-top: 5%; */
 	padding: 2rem;
+}
+
+.outer {
+  /* max-width: 1400px; */
+  /* height: 100%; */
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: orange;
+  border: 1px solid orangered;
+  margin-top: 8vh;
+  margin-top: 8vh;
+  font-weight: 700;
+  font-size: 2rem;
 }
