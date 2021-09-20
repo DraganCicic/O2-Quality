@@ -60,7 +60,7 @@ const SearchBar = (props) => {
 		axios.get('https://ironrest.herokuapp.com/o2Air').then((res) => console.log(res.data));
 	}, []);
 
-	const saveData = (city) => {
+	const saveData = () => {
 		axios
 			.post('https://ironrest.herokuapp.com/o2Air', { Favorite: `${city}` })
 			.then((res) => console.log(res.data));
@@ -98,7 +98,7 @@ const SearchBar = (props) => {
 					</label>
 				</div>
 				<div className="btn-wrapper">
-					<button onClick={saveData(city)} className="btn-grad">
+					<button onClick={saveData} className="btn-grad">
 						Save Favorite City
 					</button>
 

@@ -216,3 +216,19 @@ img{
 		display: flex;
 		justify-content: center;
 	}
+
+	.favorites {
+		display: flex;
+		justify-content: center;
+	}
+
+	.list-cities {
+		display: flex;
+		justify-content: center;
+	}
+	
+	.list-css {
+		color: #e56103;
+		font-weight: 700;
+		font-size: 2rem;
+	}

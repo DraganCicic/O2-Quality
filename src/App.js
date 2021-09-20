@@ -9,6 +9,7 @@ import AllStates from './components/AllStates';
 import AllCities from './components/AllCities';
 import SearchBar from './components/SearchBar';
 import WeatherChannel from './components/WeatherChannel';
+import SavedCities from './components/SavedCities';
 import { useEffect } from 'react';
 import axios from 'axios';
 
@@ -43,6 +44,7 @@ function App() {
 				<Route exact path="/country/:countryName/state/:stateName/city/:cityName" component={CityDetails} />
 				{/* <Route exact path="/AllCities" component={AllCities} /> */}
 				<Route exact path="/WeatherChannel" component={WeatherChannel} />
+				<Route exact path="/SavedCities" component={SavedCities} />
 			</Switch>
 		</div>
 	);
