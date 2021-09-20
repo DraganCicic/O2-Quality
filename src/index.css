@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap");
 
 @media screen and (min-width: 1300px) {
-	.hello {
-	}
-	body {
-	}
+  .hello {
+  }
+  body {
+  }
 }
 
 body {
@@ -16,47 +16,47 @@ body {
   /* overflow-y: hidden; */
   min-height: 100vh;
 }
-#root{
-min-height: 100vh;
+#root {
+  min-height: 100vh;
 }
 
 code {
-	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
 }
 
 .App {
-	background-repeat: no-repeat;
-	background-size: cover;
-	min-height: 100vh;
-	display: flex;
-	flex-direction: column;
-
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .App {
-	background-image: url("http://localhost:3000/images/background.png");
-	/* height: 100vh; */
+  background-image: url("http://localhost:3000/images/background.png");
+  /* height: 100vh; */
 }
 
 .header {
-  color:  orange;
+  color: orange;
   /* border: 1px solid white; */
   margin-top: 8vh;
-	margin-top: 8vh;
+  margin-top: 8vh;
 }
 
 .upper-bar {
-	margin-top: 10vh;
+  margin-top: 10vh;
 }
 
 .container {
-	max-width: 1400px;
-	height: 100%;
-	margin: 0 auto;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex: 1 0 100%;
+  max-width: 1400px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 0 100%;
 }
 
 .inner-container {
@@ -77,19 +77,19 @@ code {
 .intro-text {
   color: white;
   font-size: 2rem;
-	font-size: 2rem;
+  font-size: 2rem;
 }
 
 .air-quality {
-	font-size: 2.5rem;
+  font-size: 2.5rem;
 }
 
 .search-box {
-	font-size: 2rem;
-	padding-left: 1rem;
-	padding-right: 1rem;
-	padding-top: 0.25rem;
-	padding-bottom: 0.25rem;
+  font-size: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
 }
 
 .button {
@@ -108,127 +108,161 @@ code {
 .airtext {
   color: white;
   margin-top: 3vh;
-	font-size: 2rem;
-	background-color: aqua;
-	color: grey;
-	border-radius: 3px;
-	border: 1px solid grey;
-	padding-left: 1rem;
-	padding-right: 1rem;
-	padding-top: 0.25rem;
-	padding-bottom: 0.25rem;
-	margin-left: 120px;
-	margin-right: 120px;
-	
+  font-size: 2rem;
+  background-color: aqua;
+  color: grey;
+  border-radius: 3px;
+  border: 1px solid grey;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  margin-left: 120px;
+  margin-right: 120px;
 }
 
 .airtext {
-	margin-top: 3vh;
+  margin-top: 3vh;
 }
 
-img{
-	display: block;
-	max-width: 100%;
+img {
+  display: block;
+  max-width: 100%;
 }
 .displayimg {
-	padding: 0;
-	margin-top: 30px;
-	pointer-events: none;
-	display: flex;
-	justify-content: center;
-	
-	
+  padding: 0;
+  margin-top: 30px;
+  pointer-events: none;
+  display: flex;
+  justify-content: center;
 }
-.animatedImage{
-	width: 60%;
-	
+.animatedImage {
+  width: 60%;
 }
-
-
 
 .homegif {
-	height: 50px;
-	width: auto;
+  height: 50px;
+  width: auto;
 
-	pointer-events: none;
+  pointer-events: none;
 }
 
-
-.btn-grad {background-image: linear-gradient(to right, orange 0%, #e56103  51%, orange  100%)}
 .btn-grad {
-	   margin: 10px;
-	   padding: 15px 45px;
-	   text-align: center;
-	   text-transform: uppercase;
-	   transition: 0.5s;
-	   background-size: 200% auto;
-	   color: white;            
-	   box-shadow: 0 0 20px #eee;
-	   border-radius: 10px;
-	   display: block;
-     font-size: 1rem;
-     font-weight: 700;
-	 }
+  background-image: linear-gradient(
+    to right,
+    orange 0%,
+    #e56103 51%,
+    orange 100%
+  );
+}
+.btn-grad {
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+  font-size: 1rem;
+  font-weight: 700;
+}
 
 .btn-grad:hover {
-	   background-position: right center; /* change the direction of the change here */
-	   color: #fff;
-	   text-decoration: none;
-	 }
-	 
-	 p{
-		 margin:0;
-		 
-		}
-	.date {
-		font-size: 24px;
-		font-weight: bold;
-		margin-top: 0;
-		margin-bottom: 15px;
-	}
-	.city{
-		font-size: 24px;
-	}
-	.temp{
-		font-size: 60px;
-		font-weight: bold;
-	}
-	.weatherStatus{
-		font-size: 30px;
-		margin-bottom: 0;	
-	}
-	.weatherData{
-		padding-left: 20px;
-	}
-	.form{
-		display: flex;
-		padding-top: 20px;
-		
-		
-	}
-	.form-input{
-		font-size: 25px;
-		margin: 0 10px;
-		padding: 5px;
-		border-radius: 5px;
-	}
-	.btn-wrapper{
-		display: flex;
-		justify-content: center;
-	}
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
 
-	.favorites {
-		display: flex;
-		justify-content: center;
-	}
+p {
+  margin: 0;
+}
+.date {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+.city {
+  font-size: 24px;
+}
+.temp {
+  font-size: 60px;
+  font-weight: bold;
+}
+.weatherStatus {
+  font-size: 30px;
+  margin-bottom: 0;
+}
+.weatherData {
+  padding-left: 20px;
+}
+.form {
+  display: flex;
+  padding-top: 20px;
+}
+.form-input {
+  font-size: 25px;
+  margin: 0 10px;
+  padding: 5px;
+  border-radius: 5px;
+}
+.btn-wrapper {
+  display: flex;
+  justify-content: center;
+}
 
-	.list-cities {
-		display: flex;
-		justify-content: center;
-	}
-	
-	.list-css {
-		color: #e56103;
-		font-weight: 700;
-		font-size: 2rem;
-	}
+.favorites {
+  display: flex;
+  justify-content: center;
+}
+
+.list-cities {
+  display: flex;
+  justify-content: center;
+}
+
+.list-css {
+  color: #e56103;
+  font-weight: 700;
+  font-size: 2rem;
+  font: 200 20px/1.5 Helvetica, Verdana, sans-serif;
+  border-bottom: 1px solid #ccc;
+  text-align: left;
+}
+
+.list-css:last-child {
+  border: none;
+}
+
+.list-css a {
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  display: block;
+  width: 200px;
+
+  -webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -moz-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -o-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -ms-transition: font-size 0.3s ease, background-color 0.3s ease;
+  transition: font-size 0.3s ease, background-color 0.3s ease;
+}
+
+.list-css a:hover {
+  font-size: 30px;
+  background: orange;
+}
+
+.savedCities-container {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	background-color: rgba(0, 121, 158, 0.644);
+	max-width: 1000px;
+	/* height: 80%; */
+	/* margin-top: 5%; */
+	padding: 2rem;
+}

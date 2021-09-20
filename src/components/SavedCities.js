@@ -10,6 +10,12 @@ const SavedCities = () => {
     axios.get("https://ironrest.herokuapp.com/o2Air").then((res) => {
       //create array with numbers of repeats
       setFavoriteCities(res.data);
+        function setFavoriteCities(favoriteCities, value) {
+            let count = 0
+            favoriteCities.forEach((v) => (v === value && count++))
+            return count;
+        }
+            console.log(setFavoriteCities(favoriteCities, 1))
     });
   }, []);
 
@@ -21,9 +27,10 @@ const SavedCities = () => {
             <Link key={city._id} to={`/city/${city._id}`}>
               {" "}
               <li className="list-css">
-                {city.Favorite} {city.amount}{" "}
-              </li>
-              ;{" "}
+                <a href="#">
+                  {city.Favorite} {city.amount}{" "}
+                </a>
+              </li>{" "}
             </Link>
           );
         })}
@@ -34,7 +41,9 @@ const SavedCities = () => {
     <div>
       <h1 className="favorites">Your Favorite Cities</h1>
       <div className="list-cities">
-        <ShowFavoriteCities />
+        <div className="savedCities-container">
+          <ShowFavoriteCities />
+        </div>
       </div>
     </div>
   );
