@@ -106,8 +106,8 @@ code {
 }
 
 .airtext {
-  	color: white;
-  	margin-top: 3vh;
+  color: white;
+  margin-top: 3vh;
 	font-size: 2rem;
 	background-color: aqua;
 	color: grey;
@@ -154,7 +154,7 @@ img{
 }
 
 
-.btn-grad {background-image: linear-gradient(to right, #ff6e7f 0%, #bfe9ff  51%, #ff6e7f  100%)}
+.btn-grad {background-image: linear-gradient(to right, orange 0%, #e56103  51%, orange  100%)}
 .btn-grad {
 	   margin: 10px;
 	   padding: 15px 45px;
@@ -166,6 +166,8 @@ img{
 	   box-shadow: 0 0 20px #eee;
 	   border-radius: 10px;
 	   display: block;
+     font-size: 1rem;
+     font-weight: 700;
 	 }
 
 .btn-grad:hover {
@@ -173,9 +175,6 @@ img{
 	   color: #fff;
 	   text-decoration: none;
 	 }
-
-
-
 	 
 	 p{
 		 margin:0;
