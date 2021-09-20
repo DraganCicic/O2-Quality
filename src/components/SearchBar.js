@@ -57,9 +57,9 @@ const SearchBar = (props) => {
 		}
 	};
 
-	useEffect(() => {
-		axios.get('https://ironrest.herokuapp.com/o2Air').then((res) => console.log(res.data));
-	}, []);
+	// useEffect(() => {
+	// 	axios.get('https://ironrest.herokuapp.com/o2Air').then((res) => console.log(res.data));
+	// }, []);
 
 	const saveData = () => {
 		axios
