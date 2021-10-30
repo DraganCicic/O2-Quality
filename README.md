@@ -1,10 +1,10 @@
 # ![O2-Quality](public/images/o2logo.png) - Quality
 
-## O2-Quality app was built with 'React'
+## O2-Quality app was built with 'React.js'
+
+O2-Quality is a web app that was built with 'React.js'. This app uses API's for "Air Quality Index" (AQI) and weather. This app allows you to pull pollution data from API, see the pollution in any city, save favorite cities, and check weather details in any city.
 
 ### Check out the app [here](https://o2-quality.netlify.app)
-
-### (GitHub repository [here](https://github.com/O2-Quality/O2-Quality))
 
 ### Created by: [Dragan](https://github.com/DraganCicic), [Josh](https://github.com/jbaker825), and [Seth](https://github.com/sarebro77)
 
@@ -20,7 +20,5 @@
 - Be able to see the pollution in any city at any time
 - Save favorite cities
 - Check weather details in a city
-
-## Sample screen shot of the home page:
 
 ![Home Page](public/images/home_ss.png)
